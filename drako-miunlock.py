@@ -93,7 +93,7 @@ ALPHABET = "abcdefghijklmnopqrstuvwxyz";
 def make_nonce():
     return "".join(random.choices(ALPHABET, k=16));
 
-EU_COUNTRYCODES = ["DE", "NO", "BE", "FI", "PT", "BG", "DK", "LT", "LU", "HR", "LV", "FR", "HU", "SE", "SI", "SK", "GB", "IE", "EE", "MT", "IS", "GR", "IT", "ES", "AT", "CY", "CZ", "PL", "LI", "RO", "NL"];
+EU_COUNTRYCODES = ["DE", "NO", "BE", "FI", "PT", "BG", "DK", "LT", "LU", "HR", "LV", "FR", "HU", "SE", "SI", "SK", "IE", "EE", "MT", "IS", "GR", "IT", "ES", "AT", "CY", "CZ", "PL", "LI", "RO", "NL"];
 def code2region(code):
     if code in EU_COUNTRYCODES: return "Europe", "https://eu-unlock.update.intl.miui.com";
     elif code == "RU": return "Russia", "https://ru-unlock.update.intl.miui.com";
